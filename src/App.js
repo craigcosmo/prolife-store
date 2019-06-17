@@ -1,7 +1,7 @@
 import React from 'react';
-import  from './component/Header'
-import  from './component/Body'
-import  from './component/Footer.js'
+import Header from './component/Header'
+import Body from './component/Body'
+import Footer from './component/Footer'
 function App() {
 	return (
 		<div className="App">
