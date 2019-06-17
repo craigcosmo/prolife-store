@@ -1,8 +1,7 @@
 {
   "name": "prolife-store",
-  "homepage":"http://mayhutbuidyson.com/build",
+  "homepage":"http://mayhutbuidyson.com",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@babel/core": "7.4.3",
     "@svgr/webpack": "4.1.0",

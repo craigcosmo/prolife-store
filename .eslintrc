@@ -9,8 +9,7 @@
 	"env": {
         "browser": true,
         "node": true,
-        "es6":true,
-        "react-native/react-native": true
+        "es6":true
     },
 	"extends":[
 		"plugin:import/errors",
@@ -18,7 +17,6 @@
 	],
 	"plugins": [
 		"react",
-		"react-native",
 		"json",
 		"import"
 	],
@@ -37,7 +35,7 @@
 		"__DEV__":true
 	},
 	"rules": {
-		"react-native/no-unused-styles": 1,
+
 
 		"quote-props": ["off", "as-needed"],
 		"no-unused-vars": ["warn"],
