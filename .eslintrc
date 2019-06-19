@@ -38,7 +38,7 @@
 
 
 		"quote-props": ["off", "as-needed"],
-		"no-unused-vars": ["warn"],
+		"no-unused-vars": ["off"],
 		"no-mixed-spaces-and-tabs": "off",
 		"jsx-quotes": ["warn", "prefer-double"],
 		"quotes": ["warn", "single"],
