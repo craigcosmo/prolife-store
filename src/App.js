@@ -23,14 +23,16 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig)
 
 
-const style = {
-	header:{
-		
+const css = {
+	container:{
+		// flex:1,
+		// display:'flex'
+		width:'1200px'
 	}
 }
 function App() {
 	return (
-		<div>
+		<div style={css.container}>
 			<Header />
 			<Body />
 			<Footer />

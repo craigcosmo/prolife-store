@@ -17,6 +17,7 @@ const css = {
 	},
 	right:{
 		textAlign:'right',
+		flex:1
 	},
 	text:{
 		textTransform:'capitalize',
@@ -24,16 +25,20 @@ const css = {
 	},
 	img :{
 		width:'200px'
+	},
+	left:{
+		width:'300px'
 	}
 }
 export default function Header() {
 	return (
 		<div style={css.wrapper}>
-			<div style={css.logo}>
-				<Link to="/" style={css.text}>
+			<div style={css.left}>
+				<Link to="/" style={css.logo}>
 					<img style={css.img} src={logo} />
 				</Link>
 			</div>
+			
 			<div style={css.right}>
 				<Link to="san-pham" style={css.text}>sản phẩm</Link>
 				<Link to="gioi-thieu" style={css.text}>giới thiệu</Link>

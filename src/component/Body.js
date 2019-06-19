@@ -6,11 +6,15 @@ import Product from './Product'
 import Contact from './Contact'
 import { Route, Link } from 'react-router-dom'
 
-
+const css ={
+	body :{
+		flex:1
+	}
+}
 
 export default function Body() {
 	return (
-		<div>
+		<div style={css.body}>
 			<Route path="/" exact component={Home} />
 			<Route path="/gioi-thieu" component={About} />
 			<Route path="/san-pham" component={Product} />
