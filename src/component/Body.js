@@ -11,7 +11,7 @@ import { Route, Link } from 'react-router-dom'
 export default function Body() {
 	return (
 		<div>
-			<Route path="/" component={Home} />
+			<Route path="/" exact component={Home} />
 			<Route path="/gioi-thieu" component={About} />
 			<Route path="/san-pham" component={Product} />
 			<Route path="/lien-he" component={Contact} />
