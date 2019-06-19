@@ -1,24 +1,24 @@
-import * as firebase from 'firebase'
+
 import React from 'react';
+import Home from './Home'
+import About from './About'
+import Product from './Product'
+import Contact from './Contact'
+import { Route, Link } from 'react-router-dom'
 
-const firebaseConfig = {
-	apiKey: 'AIzaSyA-Nlh1b7DVT1epQyTUnwaA6CIUkFLOA34',
-	authDomain: 'prolife-68172.firebaseapp.com',
-	databaseURL: 'https://prolife-68172.firebaseio.com',
-	projectId: 'prolife-68172',
-	storageBucket: 'prolife-68172.appspot.com',
-	messagingSenderId: '928262337014',
-	appId: '1:928262337014:web:c76b4610edbaca55'
-}
 
-firebase.initializeApp(firebaseConfig)
 
-function Body() {
+export default function Body() {
 	return (
 		<div>
-			body
+			<Route path="/" component={Home} />
+			<Route path="/gioi-thieu" component={About} />
+			<Route path="/san-pham" component={Product} />
+			<Route path="/lien-he" component={Contact} />
 		</div>
 	);
 }
 
-export default Body;
+Body.defaultProps = {
+	
+}
