@@ -8,26 +8,17 @@ import 'firebase/storage';     // for storage
 import 'firebase/database';    // for realtime database
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import MessengerCustomerChat from 'react-messenger-customer-chat';
+import {FIREBASE_KEY} from './api/api'
 
-
-const firebaseConfig = {
-	apiKey: 'AIzaSyA-Nlh1b7DVT1epQyTUnwaA6CIUkFLOA34',
-	authDomain: 'prolife-68172.firebaseapp.com',
-	databaseURL: 'https://prolife-68172.firebaseio.com',
-	projectId: 'prolife-68172',
-	storageBucket: 'prolife-68172.appspot.com',
-	messagingSenderId: '928262337014',
-	appId: '1:928262337014:web:c76b4610edbaca55'
-}
-
-firebase.initializeApp(firebaseConfig)
+firebase.initializeApp(FIREBASE_KEY)
 
 
 const css = {
 	container:{
-		// flex:1,
+		flex:1,
 		// display:'flex'
-		width:'1200px'
+
 	}
 }
 function App() {
@@ -36,6 +27,11 @@ function App() {
 			<Header />
 			<Body />
 			<Footer />
+			<MessengerCustomerChat
+			    pageId="2457682160929100"
+			    appId="2317245631863613"
+			    htmlRef="window.location.pathname"
+			/>
 		</div>
 	);
 }

@@ -5,13 +5,16 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 const css = {
 	wrapper :{
-		backgroundColor:'red',
+		// backgroundColor:'red',
 		display: 'flex',
 		flexDirection:'row',
 		alignItems:'center',
+		paddingTop:'30px',
+		width:'1200px',
+		margin: 'auto'
 	},
 	logo:{
-		backgroundColor:'blue',
+		// backgroundColor:'blue',
 		display:'flex',
 		alignItems:'center',
 	},
@@ -22,6 +25,8 @@ const css = {
 	text:{
 		textTransform:'capitalize',
 		marginLeft:'20px',
+		textDecoration:'none',
+		color:'#000'
 	},
 	img :{
 		width:'200px'

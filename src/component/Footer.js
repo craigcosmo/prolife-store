@@ -1,17 +1,121 @@
 
 import React from 'react';
+import twit from '../image/twhite.png'
+import face from '../image/fwhite.png'
+import email from '../image/ewhite.png'
+import you from '../image/uwhite.png'
+import {Link} from 'react-router-dom'
+import {URL} from '../api/api'
 const css = {
 	wrapper :{
+		display:'flex',
+		flexDirection:'row',
+		color:'#fff',
+		width:'1200px',
+		margin:'auto'
+	},
+	dec1 : {
+		flex:1,
+		paddingRight:'20px',
+	},
+	dec2 : {
+		flex:1,
+		paddingLeft:'20px',
+		paddingRight:'20px',
+	},
+	dec3 : {
+		flex:1,
+		paddingLeft:'20px',
+	},
+	footer : {
+		backgroundColor:'#000',
+		paddingBottom:40,
+		paddingTop:40,
+		marginTop:'auto'
+	},
+	share:{
+
+	},
+	par :{
+		marginBottom:'10px',
+		fontSize:'15px',
+		fontWeight:300,
+	},
+	img: {
+		width:'24px',
+		height:'24px',
+	},
+	second: {
+		width:'22px',
 		
 	},
+	link :{
+		marginRight:'20px',
+	}
+}
+
+const twitter = function(e){
+    e.preventDefault()
+    let width  = 575,
+    height = 400,
+    left   = (window.innerWidth  - width)  / 2,
+    top    = (window.innerHeight - height) / 2,
+    uri = encodeURIComponent(URL),
+    text = '',
+    url = 'https://twitter.com/share?url='+uri,
+    opts = 'status=1' + ',width=' + width + ',height=' + height +',top=' + top + ',left=' + left;
+
+    window.open(url, 'twitter', opts)
+}
+const facebook = function(e){
+    e.preventDefault()
+    let width  = 575,
+    height = 400,
+    left   = (window.innerWidth  - width)  / 2,
+    top    = (window.innerHeight - height) / 2,
+    uri = encodeURIComponent(URL),
+    text = '',
+    url = 'https://www.facebook.com/sharer/sharer.php?u='+uri,
+    opts = 'status=1' + ',width=' + width + ',height=' + height +',top=' + top + ',left=' + left;
+
+    window.open(url, 'twitter', opts)
 }
 
 function Footer() {
+
+	
+
 	return (
-		<div style={css.wrapper}>
-			<div></div>
-			<div></div>
-			<div></div>
+		<div style={css.footer}>
+			<div style={css.wrapper}>
+				<div style={{...css.dec1, ...css.share}}>
+					<div style={css.par}>Website này thuộc sở hửu công ty prolife</div>
+					<div style={css.par}>Cty prolife nhà phân phối sản phẩm của thươngthương tại Việt Nam </div>
+				</div>
+				<div style={{...css.dec2, ...css.share}}>
+					<div style={css.par}>social media</div>
+					<div>
+						<a style={css.link} onClick={twitter}>
+							<img style={css.img} src={twit} />
+						</a>
+						<a style={css.link} onClick={facebook}>
+							<img style={css.img} src={face} />
+						</a>
+						<a style={css.link} href={'https://www.youtube.com/user/dysonteam'} target="_blank">
+							<img style={css.img} src={you} />
+						</a>
+						<a style={css.link} href={'mailto:?subject=myhutbuidyson&body=hey, website ban san may hut bui dyson'}>
+							<img style={css.img} src={email} />
+						</a>
+					</div>
+				</div>
+				<div style={{...css.dec3, ...css.share}}>
+					<div style={css.par}>Thong tin liên hệ</div>
+					<div style={css.par}>0908945948</div>
+					<div style={css.par}>55 phạm ngocthach , phường 6, quân 3</div>
+					<div style={css.par}>prolifehome@gmail.com</div>
+				</div>
+			</div>
 		</div>
 	);
 }

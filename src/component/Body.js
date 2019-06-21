@@ -8,6 +8,8 @@ import { Route, Link } from 'react-router-dom'
 
 const css ={
 	body :{
+		width:'1200px',
+		margin: 'auto',
 		flex:1
 	}
 }
