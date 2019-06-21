@@ -7,6 +7,10 @@ import hair from '../image/hair.png'
 import {Link} from 'react-router-dom'
 
 const css = {
+	wrap:{
+		width:'1200px',
+		margin: 'auto',
+	},
 	head:{
 		fontSize:'40px',
 		marginBottom:'85px',
@@ -55,7 +59,7 @@ const css = {
 export default function Product() {
 	return (
 		<DocumentTitle title={'sản phẩm'}>
-			<div>
+			<div style={css.wrap}>
 				<h1 style={css.head}>
 					chọn một trong các dòng sản phẩm của dyson
 				</h1>

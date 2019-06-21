@@ -6,15 +6,21 @@ import Product from './Product'
 import Contact from './Contact'
 import { Route, Link } from 'react-router-dom'
 
+const path = window.location.pathname
+console.log(path)
+
 const css ={
 	body :{
-		width:'1200px',
-		margin: 'auto',
+		// width:'1200px',
+		// margin: 'auto',
 		flex:1
 	}
 }
 
-export default function Body() {
+
+export default function Body(props) {
+	// const params = JSON.parse(JSON.stringify(props.match));
+	console.log(props)
 	return (
 		<div style={css.body}>
 			<Route path="/" exact component={Home} />

@@ -11,7 +11,8 @@ const css = {
 		alignItems:'center',
 		paddingTop:'30px',
 		width:'1200px',
-		margin: 'auto'
+		margin: 'auto',
+		marginBottom:'20px',
 	},
 	logo:{
 		// backgroundColor:'blue',

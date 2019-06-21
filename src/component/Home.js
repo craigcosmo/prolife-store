@@ -8,7 +8,9 @@ import {Link} from 'react-router-dom'
 
 const css = {
 	wrapper : {
-		backgroundColor:'red',
+		// backgroundColor:'red',
+		width:'1200px',
+		margin: 'auto',
 	},
 	img: {
 		width:'100%',
@@ -55,7 +57,8 @@ const css = {
 }
 
 
-export default function Home() {
+export default function Home(props) {
+	console.log(props.match)
 	return (
 		<DocumentTitle title={'máy hút bụi dyson'}>
 			<div style={css.wrapper}>
