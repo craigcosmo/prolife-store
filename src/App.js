@@ -7,7 +7,6 @@ import 'firebase/auth';        // for authentication
 import 'firebase/storage';     // for storage
 import 'firebase/database';    // for realtime database
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import {FIREBASE_KEY} from './api/api'
 

@@ -63,7 +63,7 @@ export default function Home() {
 					<div style={css.floater}>
 						<h1 >Máy hút bụi không dây công suất cao</h1>
 						<div style={css.button}>
-							<Link style={css.thelink}>xem thêm</Link>
+							<Link to="san-pham" style={css.thelink}>xem thêm</Link>
 						</div>
 					</div>
 					
@@ -76,7 +76,7 @@ export default function Home() {
 					<div style={css.floater}>
 						<h1 >Chăm sóc tóc bảo vệ tóc suông mượt</h1>
 						<div style={css.button}>
-							<Link style={css.thelink}>xem thêm</Link>
+							<Link to="san-pham" style={css.thelink}>xem thêm</Link>
 						</div>
 					</div>
 					<img style={css.img} src={d2} />
