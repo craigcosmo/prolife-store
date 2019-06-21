@@ -36,8 +36,10 @@ const css = {
 	},
 	img: {
 		// width:'100%',
-		height:'460px',
-		margin:'20px'
+		height:'400px',
+		margin:'20px',
+		marginBottom:'40px',
+		marginTop:'40px',
 	},
 	title:{
 		fontSize:'24px',
@@ -53,32 +55,31 @@ const css = {
 export default function Product() {
 	return (
 		<DocumentTitle title={'sản phẩm'}>
-		<div>
-			<h1 style={css.head}>
-				chọn một trong các dòng sản phẩm của dyson
-			</h1>
-			<div style={css.box}>
-				<div style={css.item}>
-					<Link to={'san-pham/may-hut-bui'} style={css.border}>
-						<img style={css.img} src={vac} />
-					</Link>
-					<div style={css.title}>Máy hút bụi</div>
-				</div>
-				<div style={css.item}>
-					<Link to={'san-pham/quat-khong-canh'} style={css.border}>
-						<img style={css.img } src={fan} />
-					</Link>
-					<div style={css.title}>Quạt không cánh</div>
-				</div>
-				<div style={css.item}>
-					<Link to={'san-pham/dyson-supersonic'} style={css.border}>
-						<img style={css.img } src={hair} />
-					</Link>
-					<div style={css.title}>Chăm sóc tóc</div>
-				</div>
-			</div>	
-		</div>
-			
+			<div>
+				<h1 style={css.head}>
+					chọn một trong các dòng sản phẩm của dyson
+				</h1>
+				<div style={css.box}>
+					<div style={css.item}>
+						<Link to={'san-pham/may-hut-bui'} style={css.border}>
+							<img style={css.img} src={vac} />
+						</Link>
+						<div style={css.title}>Máy hút bụi</div>
+					</div>
+					<div style={css.item}>
+						<Link to={'san-pham/quat-khong-canh'} style={css.border}>
+							<img style={css.img } src={fan} />
+						</Link>
+						<div style={css.title}>Quạt không cánh</div>
+					</div>
+					<div style={css.item}>
+						<Link to={'san-pham/dyson-supersonic'} style={css.border}>
+							<img style={css.img } src={hair} />
+						</Link>
+						<div style={css.title}>Chăm sóc tóc</div>
+					</div>
+				</div>	
+			</div>
 		</DocumentTitle>
 		
 	);

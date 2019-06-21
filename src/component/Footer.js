@@ -6,6 +6,9 @@ import email from '../image/ewhite.png'
 import you from '../image/uwhite.png'
 import {Link} from 'react-router-dom'
 import {URL} from '../api/api'
+import ReactTooltip from 'react-tooltip'
+
+
 const css = {
 	wrapper :{
 		display:'flex',
@@ -96,18 +99,19 @@ function Footer() {
 					<div style={css.par}>social media</div>
 					<div>
 						<a style={css.link} onClick={twitter}>
-							<img style={css.img} src={twit} />
+							<img style={css.img} data-tip="twitter" src={twit} />
 						</a>
 						<a style={css.link} onClick={facebook}>
-							<img style={css.img} src={face} />
+							<img style={css.img} data-tip="facebook" src={face} />
 						</a>
 						<a style={css.link} href={'https://www.youtube.com/user/dysonteam'} target="_blank">
-							<img style={css.img} src={you} />
+							<img style={css.img} data-tip="youtube" src={you} />
 						</a>
 						<a style={css.link} href={'mailto:?subject=myhutbuidyson&body=hey, website ban san may hut bui dyson'}>
-							<img style={css.img} src={email} />
+							<img style={css.img} data-tip="share via email" src={email} />
 						</a>
 					</div>
+					<ReactTooltip effect="solid" place="bottom" />
 				</div>
 				<div style={{...css.dec3, ...css.share}}>
 					<div style={css.par}>Thong tin liên hệ</div>
