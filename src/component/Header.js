@@ -50,7 +50,7 @@ export default function Header() {
 			
 			<div style={css.right}>
 				<Link to="/san-pham" style={css.text}>Sản phẩm</Link>
-				<Link to="/gioi-thieu" style={css.text}>Giới thiệu</Link>
+				{/*<Link to="/gioi-thieu" style={css.text}>Giới thiệu</Link>*/}
 				<Link to="/lien-he" style={css.text}>Liện hệ cửa hàng</Link>
 			</div>
 		</div>

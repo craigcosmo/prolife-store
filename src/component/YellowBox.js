@@ -7,6 +7,7 @@ const css = {
 		backgroundColor:'#ffcc00',
 		paddingTop:'85px',
 		paddingLeft:'70px',
+		flex:1.3
 	},
 	head:{
 		marginBottom:'50px',
@@ -19,6 +20,7 @@ const css = {
 }
 
 
+
 export default function Yellow() {
 	return (
 		<div style={css.yellow}>
@@ -26,7 +28,7 @@ export default function Yellow() {
 			<p style={css.par}>0908945948</p>
 			<p style={css.par}>55 phạm ngocthach , phường 6, quân 3</p>
 			<p style={css.par}>prolife.customer@gmail.com</p>
-			<p style={css.par}><a href="https://www.facebook.com/prolife.store/">facebook page</a></p>
+			<p style={css.par}><a target="_blank" href="https://www.facebook.com/prolife.store/">facebook page</a></p>
 		</div>
 	);
 }
