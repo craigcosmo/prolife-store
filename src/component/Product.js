@@ -5,10 +5,10 @@ import vac from '../image/vac.png'
 import fan from '../image/fan.png'
 import hair from '../image/hair.png'
 import {Link} from 'react-router-dom'
-
+import {SITE_WIDTH} from '../constant/theme'
 const css = {
 	wrap:{
-		width:'1200px',
+		width:SITE_WIDTH,
 		margin: 'auto',
 	},
 	head:{

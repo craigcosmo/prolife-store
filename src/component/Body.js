@@ -11,8 +11,6 @@ console.log(path)
 
 const css ={
 	body :{
-		// width:'1200px',
-		// margin: 'auto',
 		flex:1
 	}
 }

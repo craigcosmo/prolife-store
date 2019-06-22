@@ -2,6 +2,7 @@
 import React from 'react';
 import logo from '../image/logo.png'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import {SITE_WIDTH} from '../constant/theme'
 
 const css = {
 	wrapper :{
@@ -10,7 +11,7 @@ const css = {
 		flexDirection:'row',
 		alignItems:'center',
 		paddingTop:'30px',
-		width:'1200px',
+		width:SITE_WIDTH,
 		margin: 'auto',
 		marginBottom:'20px',
 	},
@@ -21,13 +22,15 @@ const css = {
 	},
 	right:{
 		textAlign:'right',
-		flex:1
+		flex:1,
+
 	},
 	text:{
 		textTransform:'capitalize',
 		marginLeft:'20px',
 		textDecoration:'none',
-		color:'#000'
+		color:'#000',
+
 	},
 	img :{
 		width:'200px'
@@ -46,9 +49,9 @@ export default function Header() {
 			</div>
 			
 			<div style={css.right}>
-				<Link to="san-pham" style={css.text}>sản phẩm</Link>
-				<Link to="gioi-thieu" style={css.text}>giới thiệu</Link>
-				<Link to="lien-he" style={css.text}>liện hệ cửa hàng</Link>
+				<Link to="/san-pham" style={css.text}>Sản phẩm</Link>
+				<Link to="/gioi-thieu" style={css.text}>Giới thiệu</Link>
+				<Link to="/lien-he" style={css.text}>Liện hệ cửa hàng</Link>
 			</div>
 		</div>
 	);

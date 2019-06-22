@@ -4,12 +4,12 @@ import DocumentTitle from 'react-document-title'
 import d1 from '../image/d1.jpg'
 import d2 from '../image/d2.jpg'
 import {Link} from 'react-router-dom'
-
+import {SITE_WIDTH} from '../constant/theme'
 
 const css = {
 	wrapper : {
 		// backgroundColor:'red',
-		width:'1200px',
+		width:SITE_WIDTH,
 		margin: 'auto',
 	},
 	img: {
