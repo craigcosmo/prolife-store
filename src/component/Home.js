@@ -58,7 +58,6 @@ const css = {
 
 
 export default function Home(props) {
-	console.log(props.match)
 	return (
 		<DocumentTitle title={'máy hút bụi dyson'}>
 			<div style={css.wrapper}>

@@ -56,7 +56,7 @@ const css = {
 		// width:'auto'
 	}
 }
-export default function Product() {
+export default function Product({match}) {
 	return (
 		<DocumentTitle title={'sản phẩm'}>
 			<div style={css.wrap}>
@@ -65,19 +65,20 @@ export default function Product() {
 				</h1>
 				<div style={css.box}>
 					<div style={css.item}>
-						<Link to={'san-pham/may-hut-bui'} style={css.border}>
+
+						<Link to={`${match.url}/may-hut-bui`} style={css.border}>
 							<img style={css.img} src={vac} />
 						</Link>
 						<div style={css.title}>Máy hút bụi</div>
 					</div>
 					<div style={css.item}>
-						<Link to={'san-pham/quat-khong-canh'} style={css.border}>
+						<Link to={`${match.url}/quat-khong-canh`} style={css.border}>
 							<img style={css.img } src={fan} />
 						</Link>
 						<div style={css.title}>Quạt không cánh</div>
 					</div>
 					<div style={css.item}>
-						<Link to={'san-pham/dyson-supersonic'} style={css.border}>
+						<Link to={`${match.url}/dyson-supersonic`} style={css.border}>
 							<img style={css.img } src={hair} />
 						</Link>
 						<div style={css.title}>Chăm sóc tóc</div>

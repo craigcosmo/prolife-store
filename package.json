@@ -57,6 +57,7 @@
     "react-dom": "^16.8.6",
     "react-hotkeys": "^1.1.4",
     "react-messenger-customer-chat": "^0.7.2",
+    "react-modal": "^3.8.1",
     "react-router-dom": "^5.0.1",
     "react-textarea-autosize": "^7.1.0",
     "react-tooltip": "^3.10.0",
