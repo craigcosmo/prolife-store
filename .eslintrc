@@ -6,6 +6,11 @@
 			"modules": true
 		}
 	},
+	"settings": {
+		"react": {
+			"version": "16.8.6"
+		}
+	},
 	"env": {
         "browser": true,
         "node": true,
