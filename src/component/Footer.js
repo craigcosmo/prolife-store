@@ -107,7 +107,7 @@ function Footer() {
 						<a style={css.link} href={'https://www.youtube.com/user/dysonteam'} target="_blank">
 							<img style={css.img} data-tip="youtube" src={you} />
 						</a>
-						<a style={css.link} href={'mailto:?subject=myhutbuidyson&body=hey, website ban san may hut bui dyson'}>
+						<a style={css.link} href={'mailto:prolife.customer@gmail.com?subject=myhutbuidyson&body=hey, website ban san may hut bui dyson'}>
 							<img style={css.img} data-tip="share via email" src={email} />
 						</a>
 					</div>
@@ -117,7 +117,9 @@ function Footer() {
 					<div style={css.par}>Thong tin liên hệ</div>
 					<div style={css.par}>0908945948</div>
 					<div style={css.par}>55 phạm ngocthach , phường 6, quân 3</div>
-					<div style={css.par}>prolifehome@gmail.com</div>
+					<div style={css.par}>
+						<a href={'mailto:prolife.customer@gmail.com?subject=xin chao toi can tim hieu san pham&body=chao prolife, toi can biet ve san pham...'} >prolife.customer@gmail.com</a>
+					</div>
 				</div>
 			</div>
 		</div>
