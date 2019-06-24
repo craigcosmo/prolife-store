@@ -28,9 +28,16 @@ export default function ProductItems({match}) {
 			<div style={css.wrap}>
 				<div>
 					<h1 style={{'marginBottom':'40px'}}>Các Sản Phẩm Hiện Được Hiển Thị Trên Lazada Store</h1>
-					<a target="_blank" href="https://www.lazada.vn/prolife/?langFlag=vi&q=All-Products&from=wangpu&pageTypeId=2">
+					<a  target="_blank" href="https://www.lazada.vn/prolife/?langFlag=vi&q=All-Products&from=wangpu&pageTypeId=2">
 						<img src={lazada} style={css.laz} />
 					</a>
+					<div style={{paddingTop:'50px'}}>
+						<a target="_blank" href="https://www.lazada.vn/prolife/?langFlag=vi&q=All-Products&from=wangpu&pageTypeId=2">
+							https://www.lazada.vn/shop/prolife/?spm=a2o4n.pdp.seller.1.6c052830TghKon&itemId=266418438&channelSource=pdp
+						</a>
+					</div>
+					
+					
 				</div>
 			
 			</div>

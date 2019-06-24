@@ -14,7 +14,8 @@ const css = {
 		maxWidth:SITE_WIDTH,
 		margin: 'auto',
 		marginBottom:'20px',
-		...SIDE_PADDING
+		...SIDE_PADDING,
+		width:'100%'
 	},
 	logo:{
 		// backgroundColor:'blue',
