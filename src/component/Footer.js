@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 import {URL} from '../api/api'
 import ReactTooltip from 'react-tooltip'
 import {SITE_WIDTH, SIDE_PADDING} from '../constant/theme'
-
+import lazada from '../image/lazada.png'
 const css = {
 	wrapper :{
 		display:'flex',
@@ -41,7 +41,7 @@ const css = {
 
 	},
 	par :{
-		marginBottom:'10px',
+		marginBottom:'15px',
 		fontSize:'15px',
 		fontWeight:300,
 	},
@@ -55,6 +55,10 @@ const css = {
 	},
 	link :{
 		marginRight:'20px',
+	},
+	laz: {
+		width:'50%',
+		marginTop:'10px',
 	}
 }
 
@@ -95,6 +99,13 @@ function Footer() {
 				<div style={{...css.dec1, ...css.share}}>
 					<div style={css.par}>Website này thuộc sở hửu công ty prolife</div>
 					<div style={css.par}>Cty prolife nhà phân phối sản phẩm của thươngthương tại Việt Nam </div>
+					<div style={css.par}>
+						<div>Online Store:</div>
+						<a target="_blank" href="https://www.lazada.vn/prolife/?langFlag=vi&q=All-Products&from=wangpu&pageTypeId=2">
+							<img src={lazada} style={css.laz} />
+						</a>
+						
+					</div>
 				</div>
 				<div style={{...css.dec2, ...css.share}}>
 					<div style={css.par}>social media</div>
