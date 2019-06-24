@@ -11,7 +11,8 @@ import MessengerCustomerChat from 'react-messenger-customer-chat';
 const css = {
 	container:{
 		flex:1,
-		// display:'flex'
+		display:'flex',
+		flexDirection:'column',
 
 	}
 }
