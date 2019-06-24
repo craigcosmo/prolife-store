@@ -33,7 +33,7 @@ export default function ProductItems({match}) {
 					</a>
 					<div style={{paddingTop:'50px'}}>
 						<a target="_blank" href="https://www.lazada.vn/prolife/?langFlag=vi&q=All-Products&from=wangpu&pageTypeId=2">
-							https://www.lazada.vn/shop/prolife/?spm=a2o4n.pdp.seller.1.6c052830TghKon&itemId=266418438&channelSource=pdp
+							Đến gian hàng lazada
 						</a>
 					</div>
 					

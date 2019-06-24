@@ -57,7 +57,7 @@ const css = {
 		marginRight:'20px',
 	},
 	laz: {
-		width:'50%',
+		width:'200px',
 		marginTop:'10px',
 	}
 }
