@@ -2,7 +2,7 @@
 import React from 'react';
 import logo from '../image/logo.png'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
-import {SITE_WIDTH} from '../constant/theme'
+import {SITE_WIDTH, SIDE_PADDING} from '../constant/theme'
 
 const css = {
 	wrapper :{
@@ -11,9 +11,10 @@ const css = {
 		flexDirection:'row',
 		alignItems:'center',
 		paddingTop:'30px',
-		width:SITE_WIDTH,
+		maxWidth:SITE_WIDTH,
 		margin: 'auto',
 		marginBottom:'20px',
+		...SIDE_PADDING
 	},
 	logo:{
 		// backgroundColor:'blue',

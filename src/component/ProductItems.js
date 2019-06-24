@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom'
 import {SITE_WIDTH} from '../constant/theme'
 const css = {
 	wrap:{
-		width:SITE_WIDTH,
+		maxWidth:SITE_WIDTH,
 		margin: 'auto',
 	},
 

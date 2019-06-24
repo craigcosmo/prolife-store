@@ -11,7 +11,7 @@ const css = {
 		position:'relative',
 	},
 	subcon :{
-		width:SITE_WIDTH,
+		maxWidth:SITE_WIDTH,
 		margin: 'auto',
 		zIndex:3,
 		boxShadow: '6px 7px 12px rgba(0, 0, 0, 0.15)',
@@ -34,7 +34,7 @@ const css = {
 		background: 'url('+contact+') center center no-repeat',
 		backgroundSize:'120%',
 		color:'#fff',
-		width:SITE_WIDTH,
+		maxWidth:SITE_WIDTH,
 		margin: 'auto',
 		height:'400px',
 		paddingTop:'160px',
@@ -52,7 +52,7 @@ const css = {
 	},
 	contactForm:{
 		backgroundColor:'#fff',	
-		width:SITE_WIDTH,
+		maxWidth:SITE_WIDTH,
 		
 		paddingLeft:'72px',
 		paddingRight:'72px',

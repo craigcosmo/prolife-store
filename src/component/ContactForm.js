@@ -7,7 +7,7 @@ import YellowBox from './YellowBox'
 const css = {
 	contactForm:{
 		backgroundColor:'#fff',	
-		width:SITE_WIDTH,
+		maxWidth:SITE_WIDTH,
 		
 		paddingLeft:'72px',
 		paddingRight:'72px',

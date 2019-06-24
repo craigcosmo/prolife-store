@@ -7,15 +7,16 @@ import you from '../image/uwhite.png'
 import {Link} from 'react-router-dom'
 import {URL} from '../api/api'
 import ReactTooltip from 'react-tooltip'
-import {SITE_WIDTH} from '../constant/theme'
+import {SITE_WIDTH, SIDE_PADDING} from '../constant/theme'
 
 const css = {
 	wrapper :{
 		display:'flex',
 		flexDirection:'row',
 		color:'#fff',
-		width:SITE_WIDTH,
-		margin:'auto'
+		maxWidth:SITE_WIDTH,
+		margin:'auto',
+		...SIDE_PADDING
 	},
 	dec1 : {
 		flex:1,

@@ -9,7 +9,7 @@ import {SITE_WIDTH} from '../constant/theme'
 const css = {
 	wrapper : {
 		// backgroundColor:'red',
-		width:SITE_WIDTH,
+		maxWidth:SITE_WIDTH,
 		margin: 'auto',
 	},
 	img: {
