@@ -1,7 +1,7 @@
 
 import firebase from 'firebase/app'
 import 'firebase/auth';        // for authentication
-import 'firebase/firestore';     // for database
+import 'firebase/firestore';   // for database
 
 
 export const URL = 'https://mayhutbuidyson.com'
@@ -16,6 +16,14 @@ export const FIREBASE_KEY = {
 	appId: '1:928262337014:web:c76b4610edbaca55'
 }
 
+
+
+export const preload = function(arr){
+	arr.map( (url)=>{
+		(new Image()).src = url
+	})
+	
+}
 
 firebase.initializeApp(FIREBASE_KEY)
 

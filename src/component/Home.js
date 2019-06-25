@@ -5,6 +5,7 @@ import d1 from '../image/d1.jpg'
 import d2 from '../image/d2.jpg'
 import {Link} from 'react-router-dom'
 import {SITE_WIDTH} from '../constant/theme'
+import {preload} from '../api/api'
 
 const css = {
 	wrapper : {
@@ -56,8 +57,8 @@ const css = {
 	}
 }
 
-
 export default function Home(props) {
+	
 	return (
 		<DocumentTitle title={'máy hút bụi dyson'}>
 			<div style={css.wrapper}>
