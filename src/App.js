@@ -4,31 +4,25 @@ import Body from './component/Body'
 import Footer from './component/Footer'
 import {preload} from './api/api'
 
+import d1 from './image/d1.jpg'
+import contact from './image/contact.jpg'
+import ewhite from './image/ewhite.png'
+import hair from './image/hair.png'
+import f from './image/f.png'
+import lazada from './image/lazada.png'
+import twhite from './image/twhite.png'
+import d2 from './image/d2.jpg'
+import fan from './image/fan.png'
+import logo from './image/logo.png'
+import u from './image/u.png'
+import e from './image/e.png'
+import fwhite from './image/fwhite.png'
+import t from './image/t.png'
+import uwhite from './image/uwhite.png'
+
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 
-const images = [
-	'./image/d1.jpg',
-	'./image/d1.jpg',
-	'./image/contact.jpg',
-	'./image/ewhite.png',
-	'./image/hair.png',
-	'./image/tordrive tool vac.png',
-	'./image/d1.jpg',
-	'./image/f.png',
-	'./image/lazada.png ',
-	'./image/twhite.png',
-	'./image/d2.jpg',
-	'./image/fan.png',
-	'./image/logo.png',
-	'./image/u.png',
-	'./image/e.png',
-	'./image/fwhite.png ',
-	'./image/t.png',
-	'./image/uwhite.png',
-]
-setTimeout( () => {
-	preload(images)
-},3000)
+
 
 const css = {
 	container:{
