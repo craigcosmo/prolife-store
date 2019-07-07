@@ -1,72 +1,68 @@
-
-import React from 'react';
+import React from 'react'
 import DocumentTitle from 'react-document-title'
 import vac from '../image/vac.png'
 import fan from '../image/fan.png'
 import hair from '../image/hair.png'
-import {Link} from 'react-router-dom'
-import {SITE_WIDTH,SIDE_PADDING} from '../constant/theme'
+import { Link } from 'react-router-dom'
+import { SITE_WIDTH, SIDE_PADDING } from '../constant/theme'
 const css = {
-	wrap:{
-		maxWidth:SITE_WIDTH,
+	wrap: {
+		maxWidth: SITE_WIDTH,
 		margin: 'auto',
-		...SIDE_PADDING
+		...SIDE_PADDING,
 	},
-	head:{
-		fontSize:'40px',
-		marginBottom:'85px',
-		fontWeight:400,
-		marginTop:'180px',
-		textAlign:'center',
-		textTransform:'uppercase',
+	head: {
+		fontSize: '40px',
+		marginBottom: '85px',
+		fontWeight: 400,
+		marginTop: '180px',
+		textAlign: 'center',
+		textTransform: 'uppercase',
 	},
 	box: {
 		justifyContent: 'space-between',
-		display:'flex',
-		marginBottom:'200px',
+		display: 'flex',
+		marginBottom: '200px',
 	},
-	item : {
-		width:'30%',
-		display:'flex',
-		flexDirection:'column',
+	item: {
+		width: '30%',
+		display: 'flex',
+		flexDirection: 'column',
 	},
 	border: {
 		border: '1px solid #ADADAD',
-		display:'flex',
-		justifyContent:'center',
-		alignItems:'center',
-		marginBottom:'10px',
-		backgroundColor:'#fff',
-		flex:1
+		display: 'flex',
+		justifyContent: 'center',
+		alignItems: 'center',
+		marginBottom: '10px',
+		backgroundColor: '#fff',
+		flex: 1,
 	},
 	img: {
 		// width:'100%',
-		height:'400px',
-		margin:'20px',
-		marginBottom:'40px',
-		marginTop:'40px',
+		height: '400px',
+		margin: '20px',
+		marginBottom: '40px',
+		marginTop: '40px',
 	},
-	title:{
-		fontSize:'24px',
+	title: {
+		fontSize: '24px',
 	},
-	img1 :{
+	img1: {
 		// width:'70%'
 	},
-	img2 :{
+	img2: {
 		// height:'30%',
 		// width:'auto'
-	}
+	},
 }
-export default function Product({match}) {
+export default function Product({ match }) {
 	return (
 		<DocumentTitle title={'sản phẩm'}>
 			<div style={css.wrap}>
-				<h1 style={css.head}>
-					chọn một trong các dòng sản phẩm của dyson
-				</h1>
+				<h1 style={css.head}>chọn một trong các dòng sản phẩm của dyson</h1>
 				<div style={css.box}>
 					<div style={css.item}>
-
 						<Link to={`${match.url}/may-hut-bui`} style={css.border}>
 							<img style={css.img} src={vac} />
 						</Link>
@@ -74,23 +70,20 @@ export default function Product({match}) {
 					</div>
 					<div style={css.item}>
 						<Link to={`${match.url}/quat-khong-canh`} style={css.border}>
-							<img style={css.img } src={fan} />
+							<img style={css.img} src={fan} />
 						</Link>
 						<div style={css.title}>Quạt không cánh</div>
 					</div>
 					<div style={css.item}>
 						<Link to={`${match.url}/may-say`} style={css.border}>
-							<img style={css.img } src={hair} />
+							<img style={css.img} src={hair} />
 						</Link>
 						<div style={css.title}>Chăm sóc tóc</div>
 					</div>
-				</div>	
+				</div>
 			</div>
 		</DocumentTitle>
-		
-	);
+	)
 }
 
-Product.defaultProps = {
-	
-}
+Product.defaultProps = {}

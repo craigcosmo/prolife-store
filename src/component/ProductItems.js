@@ -7,17 +7,21 @@ import { Link } from 'react-router-dom'
 import { SITE_WIDTH } from '../constant/theme'
 import lazada from '../image/lazada.png'
 import { db } from '../api/api'
+import vacbanner from '../image/vacbanner.jpg'
+import hairbanner from '../image/hairbanner.jpg'
+import fanbanner from '../image/fanbanner.jpg'
 const css = {
 	wrap: {
 		maxWidth: SITE_WIDTH,
 		margin: 'auto',
 		textAlign: 'center',
-		paddingTop: '10%',
-		paddingBottom: '10%',
 		flex: 1,
 	},
 	laz: {
 		width: '200px',
+	},
+	bannerimg: {
+		maxWidth: '100%',
 	},
 }
 export default function ProductItems({ match }) {
@@ -34,27 +38,38 @@ export default function ProductItems({ match }) {
 			return 'máy sấy'
 		}
 	}
+	const getdata = () => {
+		db.collection('product_range')
+			.get()
+			.then((querySnapshot) => {
+				querySnapshot.forEach((doc) => {
+					console.log(`${doc.id} => ${doc.data()}`)
+				})
+			})
+	}
 	useEffect(() => setTitle(mystate()), [])
+
+	// db.collection("users").add({
+	//     first: "Alan",
+	//     middle: "Mathison",
+	//     last: "Turing",
+	//     born: 1912
+	// })
+	// .then(function(docRef) {
+	//     console.log("Document written with ID: ", docRef.id);
+	// })
+	// .catch(function(error) {
+	//     console.error("Error adding document: ", error);
+	// });
 
 	return (
 		<DocumentTitle title={'các sản phẩm ' + title}>
 			<div style={css.wrap}>
 				<div>
-					<h1 style={{ marginBottom: '40px' }}>
-						Các Sản Phẩm Hiện Được Hiển Thị Trên Lazada Store
-					</h1>
-					<a
-						target="_blank"
-						href="https://www.lazada.vn/prolife/?langFlag=vi&q=All-Products&from=wangpu&pageTypeId=2">
-						<img src={lazada} style={css.laz} />
-					</a>
-					<div style={{ paddingTop: '50px' }}>
-						<a
-							target="_blank"
-							href="https://www.lazada.vn/prolife/?langFlag=vi&q=All-Products&from=wangpu&pageTypeId=2">
-							Đến gian hàng lazada
-						</a>
+					<div style={css.banner}>
+						<img style={css.bannerimg} src={vacbanner} />
 					</div>
+					<div></div>
 				</div>
 			</div>
 		</DocumentTitle>
