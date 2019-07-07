@@ -17,6 +17,7 @@ const css ={
 
 
 export default function Body(props) {
+	console.log(props)
 	return (
 		<div style={css.body}>
 			<Route path="/" exact component={Home} />

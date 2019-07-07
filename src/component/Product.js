@@ -79,7 +79,7 @@ export default function Product({match}) {
 						<div style={css.title}>Quạt không cánh</div>
 					</div>
 					<div style={css.item}>
-						<Link to={`${match.url}/dyson-supersonic`} style={css.border}>
+						<Link to={`${match.url}/may-say`} style={css.border}>
 							<img style={css.img } src={hair} />
 						</Link>
 						<div style={css.title}>Chăm sóc tóc</div>
