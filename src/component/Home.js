@@ -58,7 +58,7 @@ const css = {
 
 export default function Home(props) {
 	const bannerClick = () => {
-		alert('sd')
+		FB.CustomerChat.showDialog()
 	}
 	return (
 		<DocumentTitle title={'máy hút bụi dyson'}>
