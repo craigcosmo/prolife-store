@@ -37,7 +37,8 @@
 		"it":true,
 		"Promise":true,
 		"console":true,
-		"__DEV__":true
+		"__DEV__":true,
+		"FB":true
 	},
 	"rules": {
 
