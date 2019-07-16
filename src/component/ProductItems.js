@@ -25,9 +25,10 @@ const css = {
 	},
 }
 export default function ProductItems({ match }) {
-	console.log(match.params.collection)
 	const [title, setTitle] = useState('')
-	const mystate = () => {
+	const [data, setData] = useState([])
+
+	const mytitle = () => {
 		if (match.params.collection == 'may-hut-bui') {
 			return 'máy hút bụi'
 		}
@@ -38,16 +39,47 @@ export default function ProductItems({ match }) {
 			return 'máy sấy'
 		}
 	}
-	const getdata = () => {
-		db.collection('product_range')
-			.get()
-			.then((querySnapshot) => {
-				querySnapshot.forEach((doc) => {
-					console.log(`${doc.id} => ${doc.data()}`)
-				})
-			})
+	const mypro = () => {
+		if (match.params.collection == 'may-hut-bui') {
+			return 'vacuum'
+		}
+		if (match.params.collection == 'quat-khong-canh') {
+			return 'fan'
+		}
+		if (match.params.collection == 'may-say') {
+			return 'hair_care'
+		}
 	}
-	useEffect(() => setTitle(mystate()), [])
+	const getdata = async () => {
+		let pro = await mypro()
+		let docref = db.collection('product_range').doc(pro)
+
+		docref.get().then((doc) => {
+			if (doc.exists) {
+				let docs = doc.data()
+				// console.log(typeof docs)
+				for (let property in docs) {
+					console.log(property.id)
+				}
+				// docs.map( (i) => {
+
+				// })
+				console.log(doc.data())
+			}
+			// querySnapshot.forEach((doc) => {
+			// 	console.log(doc)
+			// 	// console.log(`${doc.id} => ${doc.data()}`)
+			// 	// return doc
+			// })
+		})
+	}
+	getdata()
+	// useEffect(async () => {
+	// 	const res = await getdata()
+	// 	setData(res)
+	// })
+
+	useEffect(() => setTitle(mytitle()), [])
 
 	// db.collection("users").add({
 	//     first: "Alan",
@@ -61,7 +93,9 @@ export default function ProductItems({ match }) {
 	// .catch(function(error) {
 	//     console.error("Error adding document: ", error);
 	// });
-
+	const rednerData = (data) => {
+		return <div></div>
+	}
 	return (
 		<DocumentTitle title={'các sản phẩm ' + title}>
 			<div style={css.wrap}>

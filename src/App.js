@@ -1,8 +1,8 @@
-import React from 'react';
+import React from 'react'
 import Header from './component/Header'
 import Body from './component/Body'
 import Footer from './component/Footer'
-import {preload} from './api/api'
+import { preload } from './api/api'
 
 import d1 from './image/d1.jpg'
 import contact from './image/contact.jpg'
@@ -20,17 +20,14 @@ import fwhite from './image/fwhite.png'
 import t from './image/t.png'
 import uwhite from './image/uwhite.png'
 
-import MessengerCustomerChat from 'react-messenger-customer-chat';
-
-
+import MessengerCustomerChat from 'react-messenger-customer-chat'
 
 const css = {
-	container:{
-		flex:1,
-		display:'flex',
-		flexDirection:'column',
-
-	}
+	container: {
+		flex: 1,
+		display: 'flex',
+		flexDirection: 'column',
+	},
 }
 function App(props) {
 	return (
@@ -39,12 +36,13 @@ function App(props) {
 			<Body />
 			<Footer />
 			<MessengerCustomerChat
-			    pageId="2457682160929100"
-			    appId="2317245631863613"
-			    htmlRef="window.location.pathname"
+				pageId="2457682160929100"
+				appId="2317245631863613"
+				htmlRef="window.location.pathname"
+				debug="true"
 			/>
 		</div>
-	);
+	)
 }
 
-export default App;
+export default App
